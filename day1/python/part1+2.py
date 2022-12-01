@@ -1,6 +1,4 @@
-import itertools
-
-input = open('input.txt', 'r')
+input = open('../input.txt', 'r')
 lines = input.readlines()
 
 elf_count = 0
@@ -18,5 +16,3 @@ sorted_elves = {k: v for k,v in sorted(elves.items(), key = lambda item: item[1]
 
 print("Top calories:", list(sorted_elves.values())[0])
 print("Top 3 calories:", list(sorted_elves.values())[0]+list(sorted_elves.values())[1]+list(sorted_elves.values())[2])
-        
-        
